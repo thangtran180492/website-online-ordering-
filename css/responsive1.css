@@ -1,0 +1,48 @@
+@media all and (min-width:767px) {
+    div#formOrder {
+        font-size: 140%;
+    }
+    textarea {
+        font-size: 100%;
+    }
+    div#formOrder select {
+        font-size: 130%;
+    }
+    div#formOrder label {
+        font-size: 100%;
+    }
+    div#formOrder input {
+        font-size: 100%;
+    }
+    div#formOrder form#myFormOrder h1 {
+        font-size: 150%;
+    }
+}
+
+@media all and (min-width:992px) {
+    div#formOrder ul#contacts li {
+        height: 70px;
+    }
+    div#formOrder form {
+        width: 992px;
+        margin: auto;
+    }
+    div#formOrder {
+        font-size: 150%;
+    }
+    textarea {
+        font-size: 120%;
+    }
+    div#formOrder select {
+        font-size: 150%;
+    }
+    div#formOrder label {
+        font-size: 120%;
+    }
+    div#formOrder input {
+        font-size: 120%;
+    }
+    div#formOrder form#myFormOrder h1 {
+        font-size: 160%;
+    }
+}

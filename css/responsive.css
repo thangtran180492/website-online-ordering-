@@ -1,0 +1,91 @@
+/* khi width 768px */
+
+@media all and (min-width:768px) {
+    div.menu {
+        width: 100%;
+    }
+    div.dropmenu {
+        display: none;
+    }
+    div.list {
+        text-align: center;
+    }
+    div.list ul.button {
+        display: block;
+    }
+    div.list ul.button li {
+        width: 21.5%;
+    }
+    div.list ul.button li {
+        display: inline-block;
+    }
+    div.list ul.button li ul li {
+        display: block;
+    }
+    ul.button li.list:hover ul#droplist {
+        list-style-type: none;
+        display: block;
+        width: 100%;
+        position: absolute;
+        line-height: 1;
+    }
+    div.photo h1.name {
+        position: absolute;
+        line-height: 354%;
+        text-align: center;
+        background-color: orange;
+        width: 91%;
+        font-size: 230%;
+        color: rgb(185, 3, 33);
+        margin: 25% 3.5% 3.5% 3.5%;
+        border-radius: 20px;
+    }
+    div.note h2 {
+        font-size: 140%;
+    }
+    div.note h3 {
+        font-size: 120%;
+    }
+}
+
+
+/* khi width 992px */
+
+@media all and (min-width:992px) {
+    header {
+        width: 100%;
+        text-align: center;
+    }
+    header nav {
+        border-radius: 20px;
+        width: 992px;
+        margin: auto;
+    }
+    div.list {
+        width: 992px;
+        border: 3px solid white;
+        border-radius: 20px;
+        margin: auto;
+    }
+    div.photo {
+        width: 1000px;
+        margin: 10px auto 0px auto;
+    }
+    div.photo img {
+        width: 992px;
+    }
+    div.photo h1.name {
+        width: 910px;
+    }
+    /* main */
+    div.main {
+        width: 992px;
+        margin: auto;
+    }
+    div.note h2 {
+        font-size: 180%;
+    }
+    div.note h3 {
+        font-size: 160%;
+    }
+}

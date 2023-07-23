@@ -1,0 +1,370 @@
+body {
+    font-family: dancing Script;
+}
+
+div.list {
+    background-color: orangered;
+    border-radius: 20px;
+    width: 100%;
+}
+
+div.list a {
+    color: white;
+}
+
+div.dropmenu {
+    width: 100%;
+    line-height: 20px;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+div.dropmenu a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+}
+
+div.dropmenu a.drop {
+    float: right;
+    padding-top: 10px;
+}
+
+
+/* menu */
+
+div.list nav {
+    font-size: 15pt;
+}
+
+div.list nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.list nav ul li {
+    background-color: orangered;
+    border: 3px solid white;
+    margin: 5px 10px 5px 10px;
+    border-radius: 20px;
+    padding: 10px 0px 10px 0px;
+}
+
+@keyframes menu {
+    from {
+        background-color: orangered;
+    }
+    to {
+        background-color: white;
+    }
+    from {
+        color: white;
+    }
+    to {
+        color: orangered;
+    }
+    from {
+        border: 3px solid white;
+    }
+    to {
+        border: 3px solid orangered;
+    }
+}
+
+div.list nav ul li:hover {
+    animation: menu 1s;
+    animation-fill-mode: forwards;
+}
+
+div.list nav ul li.list:hover ul li {
+    animation: menu 1s;
+    animation-fill-mode: forwards;
+}
+
+div.list nav a {
+    width: 100%;
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+@keyframes link {
+    from {
+        color: white
+    }
+    to {
+        color: orangered
+    }
+}
+
+div.list nav ul li:hover a {
+    animation: link 1s;
+    animation-fill-mode: forwards;
+}
+
+button#buttonDrop {
+    background: orangered;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+button#buttonDrop:active {
+    animation: menu 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+/* drop */
+
+@keyframes drop {
+    from {
+        background-color: orangered;
+    }
+    to {
+        background-color: white;
+    }
+}
+
+#droplist {
+    margin-top: 10px;
+    display: none;
+}
+
+ul.button {
+    display: none;
+}
+
+ul.button li.list:hover ul#droplist {
+    display: block;
+}
+
+
+/* img */
+
+div.photo {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    background-color: orangered;
+    border-radius: 30px;
+}
+
+div.photo img {
+    margin: 0.5%;
+    width: 97.3%;
+    padding: 0.5%;
+    border-radius: 30px;
+    border: 3px solid white;
+}
+
+div.photo h1.name {
+    position: absolute;
+    line-height: 354%;
+    text-align: center;
+    background-color: orange;
+    width: 90%;
+    font-size: 100%;
+    color: rgb(185, 3, 33);
+    margin: 25% 3.5% 3.5% 3.5%;
+    border-radius: 20px;
+    opacity: 0%;
+}
+
+@keyframes title {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 50%;
+    }
+}
+
+div.photo:hover h1.name {
+    animation: title 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+/* main */
+
+main {
+    text-align: center;
+    width: 100%;
+}
+
+.buy {
+    margin: 2% 0% 2% 0%;
+    line-height: 100%;
+    width: 100%;
+    border: 3px solid orangered;
+    border-radius: 42px;
+}
+
+@keyframes buy {
+    from {
+        color: orangered;
+    }
+    to {
+        color: orange;
+    }
+}
+
+.buyNow a {
+    animation: buy 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+/* note */
+
+.note ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.note ul li {
+    padding: 1%;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+@keyframes note {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: orangered;
+    }
+    from {
+        color: black;
+    }
+    to {
+        color: white;
+    }
+}
+
+.note ul li:hover {
+    animation: note 1s;
+    animation-fill-mode: forwards;
+}
+
+div.note h2 {
+    font-size: 100%;
+}
+
+div.note h3 {
+    font-size: 100%;
+}
+
+
+/* link page */
+
+.list-food {
+    width: 100%;
+}
+
+.list-food td {
+    border: 3px solid red;
+}
+
+.list-food img {
+    width: 50%;
+    border: 3px solid red;
+}
+
+
+/* slideshow */
+
+* {
+    box-sizing: border-box
+}
+
+h4 {
+    text-align: center;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Ẩn các slider */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Định dạng nội dung Caption */
+
+.text1 {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* định dạng các chấm chuyển đổi các slide */
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+/* khi được hover, active đổi màu nền */
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+footer {
+    text-align: center;
+}

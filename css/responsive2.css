@@ -1,0 +1,41 @@
+@media all and (min-width:782px) {
+    div#form form {
+        height: 800px;
+    }
+    ul#contacts li a {
+        font-size: 80%;
+    }
+    div#form label {
+        font-size: 120%;
+    }
+    div#form input {
+        width: 500px;
+        font-size: 120%;
+    }
+    div#form input#subject {
+        width: 70%;
+    }
+    div#form textarea {
+        font-size: 120%;
+    }
+}
+
+@media all and (min-width:992px) {
+    div#form form {
+        width: 992px;
+        margin: 40px auto auto auto;
+        height: 850px;
+    }
+    ul#contacts li a {
+        font-size: 120%;
+    }
+    div#form label {
+        font-size: 140%;
+    }
+    div#form input {
+        font-size: 140%;
+    }
+    div#form textarea {
+        font-size: 140%;
+    }
+}
